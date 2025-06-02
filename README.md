@@ -1,55 +1,55 @@
 ### study-of-basic-gates
 
-**AIM:** 
+*AIM:* 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-**Equipments Required:**
+*Equipments Required:*
 
 Software – Quartus prime 
 
-**Theory**
+*Theory*
 
 Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
 AND gate OR gate NOT gate NAND gate NOR gate Ex-OR gate Ex-NOR gate
 
-**AND gate**
+*AND gate*
 
 The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB
 Y= A.B
 
-**OR gate** 
+*OR gate* 
 
 The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high. A plus (+) is used to show the OR operation.
 Y= A+B
 
-**NOT gate**
+*NOT gate*
 
 The NOT gate is an electronic circuit that produces an inverted version of the input at its output. It is also known as an inverter. If the input variable is A, the inverted output is known as NOT A. This is also shown as A' or A with a bar over the top, as shown at the outputs.
 Y= A'
 
-**NAND gate**
+*NAND gate*
 
 This is a NOT-AND gate which is equal to an AND gate followed by a NOT gate. The outputs of all NAND gates are high if any of the inputs are low. The symbol is an AND gate with a small circle on the output. The small circle represents inversion.
 Y= (AB)’
 
-**NOR gate**
+*NOR gate*
 
 This is a NOT-OR gate which is equal to an OR gate followed by a NOT gate. The outputs of all NOR gates are low if any of the inputs are high. The symbol is an OR gate with a small circle on the output. The small circle represents inversion.
 Y= (A+B)’
 
-**Ex-OR gate**
+*Ex-OR gate*
 
 The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both of its two inputs are high. An encircled plus sign (⊕) is used to show the Ex-OR operation.
 Y= A⊕B
 
-**Ex-NOR gate**
+*Ex-NOR gate*
 
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 Y= A⊕B
 
-**Procedure** 
+*Procedure* 
 
 1.	Type the program in Quartus software.
 
@@ -62,37 +62,29 @@ Y= A⊕B
 5.	For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
+*PROGRAM*
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
-```
-module ex1(a,b,c,d,e,f,g,h);
-input a,b;
-output c,d,e,f,g,h;
-assign c=a&b;
-assign d=a|b;
-assign e=a^b;
-assign f=~(a&b);
-assign g=~(a|b);
-assign h=~(a^b);
-endmodule
-```
- Developed by: Vishal S 
+
+ Developed by: Vishal S
  
- Register Number: 212224040364
+ RegisterNumber: 212224040364
  
-**Logic symbol & Truthtable**
+ ![Screenshot 2025-03-03 113345](https://github.com/user-attachments/assets/7f845365-a347-4aeb-b879-dc735c516141)
 
-![WhatsApp Image 2025-05-23 at 15 51 56_4742cb86](https://github.com/user-attachments/assets/5dfa0cfe-c2c4-482b-ae3a-c63475102109)
+*Logic symbol & Truthtable*
 
-**RTL realization Output:** 
+![DE Gate](https://github.com/user-attachments/assets/d7393b10-e7b5-404f-87ce-5828f5ccf23d)
 
-![exp1 0](https://github.com/user-attachments/assets/ad2d04f2-afd6-4b26-998f-38a2c153ee9c)
+*RTL realization Output:* 
 
-**RTL**
+![DE output](https://github.com/user-attachments/assets/fe03bad9-1bc7-448d-8fd9-8478235fa9b0)
 
-![exp1](https://github.com/user-attachments/assets/15bcd21e-29d8-4ef1-8d41-37ca389434f7)
 
-**Result:**
+*RTL*
 
-Thus, the program is executed successfully
+![Screenshot 2025-03-03 113308](https://github.com/user-attachments/assets/b376ae17-22c7-4881-b737-d6d5501faedc)
+
+*Result:*
+
+The truth table of the specified logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR) was successfully implemented and verified using Verilog programming in Quartus II.
